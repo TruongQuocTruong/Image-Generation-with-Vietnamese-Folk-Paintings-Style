@@ -1,0 +1,6 @@
+python scripts/img2img_colab.py --ddim_eta 0.0 --n_samples 1 --n_iter 1 --scale 15.0 --ddim_steps 70 --embedding_path ModelsVer/DongHoPaintingStyle/embeddings.pt --ckpt ModelsVer/sd-v1-4-001.ckpt --prompt "The UIT building, * painting stysle" --initimg "ResizedImgs/y-nghia-hoa-sen-1632666883-wabrz.jpg" --strength 0.3
+
+python api_finetune.py --ddim_eta 0.0 --n_samples 1 --n_iter 1 --scale 15.0 --ddim_steps 70 --embedding_path ModelsVer/DongHoPaintingStyle/embeddings.pt --ckpt ModelsVer/sd-v1-4-001.ckpt --prompt "The UIT building, * painting stysle" --initimg "Resized_Img/Resized_test.jpg" --strength 0.75
+
+
+(ldm) C:\Users\nvtiep\Desktop\SD_FINETUNE>streamlit run api_finetune.py --server.port 8503
